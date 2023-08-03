@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>打开窗口</title>
+</head>
+<body>
+
+    <input id="openButton" type="button" value="打开窗口">
+    <input id="closeButton" type="button" value="关闭窗口">
+
+    <script>
+        var openButton = document.getElementById("openButton");
+        var newWindow;
+        openButton.onclick = function (){
+          newWindow = open("https://www.baidu.com");
+        }
+        var closeButton = document.getElementById("closeButton");
+        closeButton.onclick = function (){
+          newWindow.close();
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>事件</title>
+</head>
+<body>
+
+<img src="x_www.jpg" alt="" id="xxx">
+
+<script>
+
+  var flag = false;
+
+  var xxx = document.getElementById("xxx");
+
+  xxx.onclick = function () {
+    if (flag) {
+      xxx.src = "x_www.jpg";
+      flag = false;
+    } else {
+      xxx.src = "58a98abc_E704833_a838ac55.jpg";
+      flag = true;
+    }
+  }
+</script>
+
+</body>
+</html>

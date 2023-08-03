@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页的前进和后退</title>
+</head>
+<body>
+
+<input id="forward" type="button" value="前进">
+<a href="案例8_轮播图.html">百度一下</a>
+
+<script>
+
+    var forward = document.getElementById("forward");
+    forward.onclick = function () {
+        history.forward();
+    }
+
+</script>
+
+</body>
+</html>
